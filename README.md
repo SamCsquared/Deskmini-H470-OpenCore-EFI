@@ -1,0 +1,1 @@
+# Deskmini-H470-Opencore-EFI
