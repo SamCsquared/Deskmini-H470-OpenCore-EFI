@@ -20,7 +20,7 @@ Hackintosh is highly hardware dependent so you might need to change your config
 4. Powermanagement options restored via Dortania's OpenCore Install Guide
 5. Update tested(Fine from Big Sur 11.5.2-> 11.6, Opencore 7.2-> 7.3 ok)
 6. Airdrop and sidecar works
-7. Iservices such as facetime and imessages works as long as you generate your own ROM
+7. Iservices such as facetime and imessages works as long as you generate your own SerialNumber,UUID,MLB, ROM and had a valid AppleID
 
 # Kexts
 To my understanding, kexts are like plugins to pass on hardware information so macOS knows what to do with them. Although SSDTS could serve the same purpose, 
@@ -52,7 +52,8 @@ kexts of more modular and more resilent thus less prone to fail when Apple updat
 # To be done in the future
 1. Bulid my own custom SSDTs
 2. Follow up on display fixes and sound fixes
+3. Dual boots Monterey and Win11 with secure boot in the future
 
-# Debugging 
+# Debugging journey
 1. Always try resetting NVRAM first
 2. Change opencore to debug version and try to follow Dortania's guide
