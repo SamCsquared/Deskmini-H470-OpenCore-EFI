@@ -2,7 +2,7 @@
 This is an efi boot sample file for deskmini h470 on opencore 7.3
 
 | Harware  |      My Setup |  comment |
-|----------|:-------------:|------:|
+|----------|:-------------:|:------:|
 | MotherBoard |  Asrock H470-stx | All in one mini PC |
 | CPU |    intel i3-10100   |   Comet lake processor |
 | CPU cooler| ID-cooling IS-40x | Need to lift the case when installing, fan works without hitting the case|
@@ -18,6 +18,22 @@ This is an efi boot sample file for deskmini h470 on opencore 7.3
 3. Update tested(Fine from Big Sur 11.5.2-> 11.6, Opencore 7.2-> 7.3 ok)
 
 # Kexts
+| Kexts |      comment |
+|----------|:-------------:|
+| AirportBrcmFixup |  Asrock H470-stx | 
+| AppleALC |    intel i3-10100   |   
+| BrcmBluetoothInjector| ID-cooling IS-40x | 
+| BrcmFirmwareData | Intergrated UHD630 |
+| BrcmPatchRAM3 |  Crucial DDR4 3200 8GB SODIMM x2 | 
+| CPUFriendDataProvider |    Cruicial P5 Nvme 1tb |
+| FeatureUnlock | BCM94352Z/DW1560 | 
+| IntelMausi| Win 10, Big Sur |
+| Lilu | Intergrated UHD630 |
+| NVMeFix |  Crucial DDR4 3200 8GB SODIMM x2 | 
+| SMCSuperIO |    Cruicial P5 Nvme 1tb |
+| USBPorts | BCM94352Z/DW1560 | 
+| VirtualSMC | Win 10, Big Sur |
+| WhateverGreen | BCM94352Z/DW1560 | 
 
 
 # Known issues
