@@ -17,14 +17,13 @@ Hackintosh is highly hardware dependent so you might need to change your config
 1. HDMI and DP boots, type c not rested
 2. Sound through HDMI or DP works
 3. Sleep/wake works
-4. Powermanagement options restored via Dortania's OpenCore Install Guide
+4. Powermanagement options restored via [Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
 5. Update tested(Fine from Big Sur 11.5.2-> 11.6, Opencore 7.2-> 7.3 ok)
 6. Airdrop and sidecar works
-7. Iservices such as facetime and imessages works as long as you generate your own SerialNumber,UUID,MLB, ROM and had a valid AppleID
+7. Iservices such as facetime and imessages works as long as you generate your own SerialNumber, UUID, MLB, ROM and had a valid Apple ID in good standing
 
 # Kexts
-To my understanding, kexts are like plugins to pass on hardware information so macOS knows what to do with them. Although SSDTS could serve the same purpose, 
-kexts of more modular and more resilent thus less prone to fail when Apple updates. Number of kexts do affect boot time to some degree so you could customize to your own need.
+To my understanding, kexts are like plugins to pass on hardware information so macOS knows what to do with them. Although SSDTS could serve the same purpose, kexts of more modular and more resilent thus less prone to fail when Apple updates. Number of kexts do affect boot time to some degree so you could customize to your own need.
 
 | Kexts |      comment |
 |----------|-------------|
@@ -46,7 +45,7 @@ kexts of more modular and more resilent thus less prone to fail when Apple updat
 
 # Known issues
 1. When booting with dual screen on, horizontal stripes/artifacts appears on screen which can be solved by repluging the moniter or turn on screen after login
-2. Popping/ hissing sound for speakers/headphone when booting, shutting down or sleeping, no issues when using macOS
+2. Popping/ hissing sound for speakers/headphone when booting, shutting down or sleeping, no issues when using macOS. Same issue is present in deskmini H310 and [viorel78](https://github.com/viorel78/ASRock-DeskMini-310/issues/1) suggests that adding rear audio cable could resolve this issue.
 3. DRM contents such as Netflix is not playable on Safari, use Firefox, Chrome or Edge instead.(As of Big Sur, DRM are baked in Apple's hardware)
 
 # To be done in the future
@@ -56,4 +55,4 @@ kexts of more modular and more resilent thus less prone to fail when Apple updat
 
 # Debugging journey
 1. Always try resetting NVRAM first
-2. Change opencore to debug version and try to follow Dortania's guide
+2. Change opencore to debug version and try to follow [Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
