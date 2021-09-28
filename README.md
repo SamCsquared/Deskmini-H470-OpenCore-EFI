@@ -10,6 +10,7 @@ Hackintosh is highly hardware dependent so you might need to change your config
 | GPU | Intergrated UHD630 | Supports up to 3 displays |
 | RAM |  Crucial DDR4 3200 8GB SODIMM x2 | Overspect as i3-10100 only supports up to 2666mz on this board |
 | Storsage |    Cruicial P5 Nvme 1tb | Picker to login in 13ish seconds |
+| Sound card | Realtek ALC235 | Somehow the website listed as ALC233 but both macOS and windows recognized as ALC235 | 
 | Wifi/Bluetooth | BCM94352Z/DW1560 | Sidecar and airdrop works |
 | Operating system | Win 10, Big Sur | Dual boot on one nvme drive |
 
@@ -41,7 +42,6 @@ To my understanding, kexts are like plugins to pass on hardware information so m
 | USBPorts | Allows proper USB mappings for speed and bluetooth | 
 | VirtualSMC | Apple SMC emulator |
 | WhateverGreen | GPU, display related | 
-
 
 # Known issues
 1. When booting with dual screen on, horizontal stripes/artifacts appears on screen which can be solved by repluging the moniter or turn on screen after login
