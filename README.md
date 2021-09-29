@@ -1,6 +1,6 @@
 # Deskmini-H470-Opencore-EFI
-This is an efi boot sample file for deskmini h470 on opencore 7.3
-Hackintosh is highly hardware dependent so you might need to change your config
+This is an efi boot sample file for deskmini h470 on opencore 7.3.  
+Hackintosh is highly hardware dependent so you might need to change your config.plist.
 
 | Harware  |   My Setup |  comment |
 |----------|-------------|------|
@@ -24,7 +24,7 @@ Hackintosh is highly hardware dependent so you might need to change your config
 7. Iservices such as facetime and imessages works as long as you generate your own SerialNumber, UUID, MLB, ROM and had a valid Apple ID in good standing
 
 # Kexts
-To my understanding, kexts are like plugins to pass on hardware information so macOS knows what to do with them. Although SSDTS could serve the same purpose, kexts of more modular and more resilent thus less prone to fail when Apple updates. Number of kexts do affect boot time to some degree so you could customize to your own need.
+To my understanding, kexts are like plugins to pass on hardware information so macOS knows what to do with them. Although SSDTS could serve the same purpose, kexts are more modular and more resilent thus less prone to fail when Apple updates. Number of kexts do affect boot time to some degree so you could customize to your own need.
 
 | Kexts |      comment |
 |----------|-------------|
