@@ -10,18 +10,18 @@
 | 顯卡 | 內顯UHD630 | 最多支持三個螢幕 |
 | 記憶體 |  Crucial DDR4 3200 8GB SODIMM x2 | 效能過剩，i3-10100在此主機板只能跑到2666MHz |
 | 硬碟 |    Cruicial P5 Nvme 1tb | Opencore選擇畫面到登入畫面約13秒 |
-| 音效卡 | 內建Realtek ALC235 | Somehow the website listed as ALC233 but both macOS and windows recognized as ALC235 | 
-| Wifi/Bluetooth | BCM94352Z/DW1560 | Sidecar and airdrop works |
-| Operating system | Win 10, Big Sur | Dual boot on one nvme drive |
+| 音效卡 | 內建Realtek ALC235 | 官方規格列為ALC233但蘋果和微軟都判定為ALC235 | 
+| Wifi/Bluetooth | BCM94352Z/DW1560 | Sidecar及airdrop都可用 |
+| Operating system | Win 10, Big Sur | 同一固態硬碟上雙開蘋果和微軟系統 |
 
 # Hackintosh
-1. HDMI and DP boots, type c not rested
-2. Sound through HDMI or DP works
-3. Sleep/wake works
-4. Powermanagement options restored via [Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
-5. Update tested(Fine from Big Sur 11.5.2-> 11.6, Opencore 7.2-> 7.3 ok)
-6. Airdrop and sidecar works
-7. Iservices such as facetime and imessages works as long as you generate your own SerialNumber, UUID, MLB, ROM and had a valid Apple ID in good standing
+1. HDMI和DP揭開機有畫面type c輸出沒有測
+2. HDMI及DP的音效皆可
+3. 睡眠喚醒可
+4. 依[Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)啟用能源節省項目  
+5. Opencore和系統更新測試可(從Big Sur 11.5.2-> 11.6, Opencore 7.2-> 7.3)
+6. Airdrop and sidecar可用
+7. Facetime和imessages等需要更改SerialNumber, UUID, MLB, ROM且最好有一個用過一陣子的Apple ID(比較不起疑)
 
 # Kexts
 To my understanding, kexts are like plugins to pass on hardware information so macOS knows what to do with them. Although SSDTS could serve the same purpose, kexts of more modular and more resilent thus less prone to fail when Apple updates. Number of kexts do affect boot time to some degree so you could customize to your own need.
