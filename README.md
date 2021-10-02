@@ -1,5 +1,5 @@
 # Deskmini-H470-OpenCore-EFI
-This is an efi boot sample file for deskmini h470 on opencore 7.3.  
+This is an efi boot sample file for deskmini h470 on OpenCore 7.3.  
 Hackintosh is highly hardware dependent so you might need to change your config.plist.  
 [繁體中文](README_ZH-TW.md)  
 [简体中文](README_zh-CN.md)
