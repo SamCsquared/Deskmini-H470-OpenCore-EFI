@@ -24,28 +24,28 @@
 7. Facetime和imessages等需要更改SerialNumber, UUID, MLB, ROM且最好有一個用過一陣子的Apple ID(比較不起疑)
 
 # Kexts
-To my understanding, kexts are like plugins to pass on hardware information so macOS knows what to do with them. Although SSDTS could serve the same purpose, kexts of more modular and more resilent thus less prone to fail when Apple updates. Number of kexts do affect boot time to some degree so you could customize to your own need.
+就我的理解，kexts就像插件一樣用來溝通硬體和macOS之間的訊息。而SSDT雖然有一樣的功能，但kexts外掛和模組化的特性能讓升級macOS時減少損壞的機會。Kexts的數量會稍微影響開機的速度，可因自己的需求和硬體斟酌哪些kext是自己需要的。
 
-| Kexts |      comment |
+| Kexts |     簡單介紹 |
 |----------|-------------|
-| AirportBrcmFixup | Fix wifi for Broadcom wifi/BT cards | 
-| AppleALC | Apple sound codecs |   
-| BrcmBluetoothInjector| Fix Bluetooth for Broadcom wifi/BT cards | 
-| BrcmFirmwareData | Fix Bluetooth for Broadcom wifi/BT cards |
-| BrcmPatchRAM3 |  Fix Bluetooth for Broadcom wifi/BT cards | 
-| CPUFriendDataProvider | Power/Energy saving management options |
-| FeatureUnlock | Allows AirPlay to Mac, Sidecar and Universal Control Unlock, NightShift Unlock on older models | 
-| IntelMausi| Intel Ethernet LAN driver for macOS |
-| Lilu | Arbitrary kext and process patching on macOS |
-| NVMeFix |  Patches for the Apple NVMe storage driver | 
-| SMCSuperIO |  Monitor hardware informations |
-| USBPorts | Allows proper USB mappings for speed and bluetooth | 
-| VirtualSMC | Apple SMC emulator |
-| WhateverGreen | GPU, display related | 
+| AirportBrcmFixup | 讓Broadcom的wifi/BT網卡能辨識，才能有Wifi | 
+| AppleALC | 辨識音訊硬體而有聲音 |   
+| BrcmBluetoothInjector| 辨識Broadcom的藍芽功能 | 
+| BrcmFirmwareData | 辨識Broadcom的藍芽功能 |
+| BrcmPatchRAM3 |  辨識Broadcom的藍芽功能 | 
+| CPUFriendDataProvider | 啟用電腦的節能選項 |
+| FeatureUnlock | 讓較舊的Mac和Ipad啟用AirPlay, Sidecar, Universal Control Unlock, NightShift等功能 | 
+| IntelMausi| 辨識Intel的乙太網路 |
+| Lilu | macOS的核心相關，基本上必備 |
+| NVMeFix | 修補Apple對於NVMe磁碟的相容性和功能 | 
+| SMCSuperIO | 修補監測硬體資訊的功能 |
+| USBPorts | 定義USB孔的硬體資訊 | 
+| VirtualSMC | 模擬Apple的System Management Controller |
+| WhateverGreen | 顯示功能相關，基本必備 | 
 
 # Known issues
-1. When booting with dual screen on, horizontal stripes/artifacts appears on screen which can be solved by repluging the moniter or turn on screen after login
-2. Popping/ hissing sound for speakers/headphone when booting, shutting down or sleeping, no issues when using macOS. Same issue is present in deskmini H310 and [viorel78](https://github.com/viorel78/ASRock-DeskMini-310/issues/1) suggests that adding rear audio cable could resolve this issue.
+1. 雙螢幕接開啟的情況下開機，進入macOS會有水平狀的黑條，可熱插拔螢幕或進入macOS後再開啟第二螢幕解決。
+2. 進入opencore選擇器，蘋果商標跑進度條時和睡眠/喚醒時會爆音，Deskmini H310有相同問題而[viorel78](https://github.com/viorel78/ASRock-DeskMini-310/issues/1) 提出購買官方的後置音源線可解決此問題。
 3. DRM contents such as Netflix is not playable on Safari, use Firefox, Chrome or Edge instead.(As of Big Sur, DRM are baked in Apple's hardware)
 
 # To be done in the future
