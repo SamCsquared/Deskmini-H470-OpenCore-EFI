@@ -1,6 +1,8 @@
 # Deskmini-H470-Opencore-EFI
 此为deskmini h470专用之opencore 7.3导引文件范例。
-黑苹果之完成度与硬件有关，任何硬件上个改变皆可能需要重新设定config.plist文件。
+黑苹果之完成度与硬件有关，任何硬件上个改变皆可能需要重新设定config.plist文件。  
+[English](README.md)        
+[繁體中文](README_ZH-TW.md)
 
 | 硬体设备  |  我的硬件 |  评语 |
 |----------|-------------|------|
@@ -18,13 +20,13 @@
 1. HDMI和DP揭开机有画面type c输出没有测。
 2. HDMI及DP的音效皆可。
 3. 睡眠/唤醒可。
-4. 依[Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)启用能源节省项目。  
+4. 依[Dortania's OpenCore OpenCore Post-Install-Fixing Power Management](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html)启用能源节省项目。  
 5. Opencore和系统更新测试可(从Big Sur 11.5.2-> 11.6, Opencore 7.2-> 7.3)。
 6. Airdrop和sidecar可用。
 7. Facetime和imessages等需要更改SerialNumber, UUID, MLB, ROM且最好有一个用过一阵子的Apple ID(比较不起疑，有正版苹果装置登录过最好)，参阅[Dortania's OpenCore Post-Install-iservices](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html)。
 
 # Kexts
-就我的理解，kexts就像插件一样用来沟通硬件和macOS之间的讯息。而SSDT虽然有一样的功能，但kexts外挂和模组化的特性能让升级macOS时减少损坏的机会。Kexts的数量会稍微影响开机的速度，可因自己的需求和硬体斟酌哪些kext是自己需要的。
+就我的理解，kexts就像插件一样用来沟通硬件和macOS之间的讯息。而SSDT虽然有一样的功能，但kexts外挂和模组化的特性能让升级macOS时减少损坏的机会。Kexts的数量会稍微影响开机的速度，可因自己的需求和硬体斟酌哪些kext是自己需要的。  
 
 | Kexts |     简单介绍 |
 |----------|-------------|
