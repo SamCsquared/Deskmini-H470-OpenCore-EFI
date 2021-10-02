@@ -47,7 +47,7 @@
 
 # Known issues
 1. 双萤幕皆开启的情况下开机，进入macOS会有水平状的黑条，可热插拔萤幕或进入macOS后再开启第二萤幕解决。
-2. 进入opencore选择器，苹果商标跑进度条时和睡眠/唤醒时会爆音，Deskmini H310也有相同问题而[viorel78](https://github.com/viorel78/ASRock-DeskMini-310/issues/1) 提出购买官方的后置音源线可解决此问题的办法。
+2. 进入opencore选择器，苹果商标跑进度条时和睡眠/唤醒时会爆音，Deskmini H310也有相同问题而[viorel78](https://github.com/viorel78/ASRock-DeskMini-310/issues/1)提出购买官方的后置音源线可解决此问题的办法。
 3. DRM内容由于苹果是用绑定硬件的方式，因此只有内显无法用Safari拨放Netflix等网站。可以用Firefox、Chrome、Edge等浏览器取代。
 
 # To be done in the future
