@@ -21,7 +21,7 @@
 4. 依[Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)啟用能源節省項目。  
 5. Opencore和系統更新測試可(從Big Sur 11.5.2-> 11.6, Opencore 7.2-> 7.3)。
 6. Airdrop和sidecar可用。
-7. Facetime和imessages等需要更改SerialNumber, UUID, MLB, ROM且最好有一個用過一陣子的Apple ID(比較不起疑)，參閱[Dortania's OpenCore Post-Install-iservices](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html)。
+7. Facetime和imessages等需要更改SerialNumber, UUID, MLB, ROM且最好有一個用過一陣子的Apple ID(比較不起疑，有正版蘋果裝置登錄過最好)，參閱[Dortania's OpenCore Post-Install-iservices](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html)。
 
 # Kexts
 就我的理解，kexts就像插件一樣用來溝通硬體和macOS之間的訊息。而SSDT雖然有一樣的功能，但kexts外掛和模組化的特性能讓升級macOS時減少損壞的機會。Kexts的數量會稍微影響開機的速度，可因自己的需求和硬體斟酌哪些kext是自己需要的。
