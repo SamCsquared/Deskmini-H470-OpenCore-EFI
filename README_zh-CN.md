@@ -38,8 +38,8 @@
 | [IntelMausi](https://github.com/acidanthera/IntelMausi)| 辨识Intel的乙太网路。 |
 | [Lilu](https://github.com/acidanthera/Lilu) | macOS的核心相关，基本上必备。 |
 | [NVMeFix](https://github.com/acidanthera/NVMeFix) | 修补Apple对于NVMe磁碟的相容性和功能。 | 
-| [SMCSuperIO](https://github.com/acidanthera/VirtualSMC) | 修补监测硬体资讯的功能。 |
-| [USBPorts](https://dortania.github.io/OpenCore-Post-Install/usb/) | 定义USB孔的硬体资讯。 | 
+| [SMCSuperIO](https://github.com/acidanthera/VirtualSMC) | 修补监测硬件资讯的功能。 |
+| [USBPorts](https://dortania.github.io/OpenCore-Post-Install/usb/) | 定义USB孔的硬件资讯。 | 
 | [VirtualSMC](https://github.com/acidanthera/VirtualSMC) | 模拟Apple的System Management Controller系统。 |
 | [WhateverGreen](https://github.com/acidanthera/WhateverGreen) | 显示功能相关，基本必备。 | 
 
