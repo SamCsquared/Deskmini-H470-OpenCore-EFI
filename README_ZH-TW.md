@@ -1,5 +1,5 @@
-# Deskmini-H470-Opencore-EFI
-此為deskmini h470專用之opencore 7.3導引文件範例。  
+# Deskmini-H470-OpenCore-EFI
+此為deskmini h470專用之OpenCore 7.3導引文件範例。  
 黑蘋果之完成度與硬體有關，任何硬體上個改變皆可能需要重新設定config.plist文件。  
 [English](README.md)    
 [简体中文](README_zh-CN.md)
@@ -11,7 +11,7 @@
 | CPU 散熱器| ID-cooling IS-40x | 安裝時風扇會刮到機殼，稍微抬起機殼即可塞入，風扇可運轉不會打機殼。|
 | 顯卡 | 內顯UHD630 | 最多支持三個螢幕。 |
 | 記憶體 |  Crucial DDR4 3200 8GB SODIMM x2 | 效能過剩，i3-10100在此主機板只能跑到2666MHz頻率。 |
-| 硬碟 |    Cruicial P5 Nvme 1tb | Opencore選擇畫面到登入畫面約13秒。 |
+| 硬碟 |    Cruicial P5 Nvme 1tb | OpenCore選擇畫面到登入畫面約13秒。 |
 | 音效卡 | 內建Realtek ALC235 | 官方規格列為ALC233但蘋果和微軟都判定為ALC235碼。 | 
 | Wifi/Bluetooth | BCM94352Z/DW1560 | Sidecar及airdrop都可用。 |
 | Operating system | Win 10, Big Sur | 同一固態硬碟上雙開蘋果和微軟系統。 |
@@ -21,7 +21,7 @@
 2. HDMI及DP的音效皆可。
 3. 睡眠/喚醒可。
 4. 依[Dortania's OpenCore OpenCore Post-Install-Fixing Power Management](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html)啟用能源節省項目。  
-5. Opencore和系統更新測試可(從Big Sur 11.5.2-> 11.6, Opencore 7.2-> 7.3)。
+5. Opencore和系統更新測試可(從Big Sur 11.5.2-> 11.6, OpenCore 7.2-> 7.3)。
 6. Airdrop和sidecar可用。
 7. Facetime和imessages等需要更改SerialNumber, UUID, MLB, ROM且最好有一個用過一陣子的Apple ID(比較不起疑，有正版蘋果裝置登錄過最好)，參閱[Dortania's OpenCore Post-Install-iservices](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html)。
 
@@ -48,7 +48,7 @@
 # Known issues
 1. 雙螢幕皆開啟的情況下開機，進入macOS會有水平狀的黑條，可熱插拔螢幕或進入macOS後再開啟第二螢幕解決。
 2. 進入opencore選擇器，蘋果商標跑進度條時和睡眠/喚醒時會爆音，Deskmini H310也有相同問題而[viorel78](https://github.com/viorel78/ASRock-DeskMini-310/issues/1) 提出購買官方的後置音源線可解決此問題的辦法。
-3. DRM內容由於蘋果是用綁定硬體的方式，因此只有內顯無法用Safari撥放Netflix等網站。可以用Firefox、Chrome、Edge等撥放器取代。
+3. DRM內容由於蘋果是用綁定硬體的方式，因此只有內顯無法用Safari撥放Netflix等網站。可以用Firefox、Chrome、Edge等瀏覽器取代。
 
 # To be done in the future
 1. 客製自己的SSDTs。
@@ -57,4 +57,4 @@
 
 # Debugging journey
 1. 有問題先重設NVRAM
-2. 利用opencore的除錯版本取得資訊，參閱[Dortania's OpenCore Install Guide-debugging](https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html)
+2. 利用OpenCore的除錯版本取得資訊，參閱[Dortania's OpenCore Install Guide-debugging](https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html)
