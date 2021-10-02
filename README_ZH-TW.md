@@ -57,4 +57,4 @@
 
 # Debugging journey
 1. 有問題先重設NVRAM
-2. 利用opencore的除錯版本取得資訊，參閱[Dortania's OpenCore Install Guide-Debugging](https://dortania.github.io/OpenCore-Install-Guide/)
+2. 利用opencore的除錯版本取得資訊，參閱[Dortania's OpenCore Install Guide-debugging](https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html)
