@@ -1,5 +1,5 @@
 # Deskmini-H470-Opencore-EFI
-此为deskmini h470专用之opencore 7.3导引文件范例。  
+此为deskmini h470专用之OpenCore 7.3导引文件范例。  
 黑苹果之完成度与硬件有关，任何硬件上个改变皆可能需要重新设定config.plist文件。  
 [English](README.md)        
 [繁體中文](README_ZH-TW.md)
@@ -11,7 +11,7 @@
 | CPU 散热器| ID-cooling IS-40x | 安装时风扇会刮到机壳，稍微抬起机壳即可塞入，风扇可运转不会打机壳。|
 | 显卡 | 内显UHD630 | 最多支持三个萤幕。 |
 | 记忆体 |  Crucial DDR4 3200 8GB SODIMM x2 | 效能过剩，i3-10100在此主机板只能跑到2666MHz频率。 |
-| 硬碟 |    Cruicial P5 Nvme 1tb | Opencore选择画面到登入画面约13秒。 |
+| 硬碟 |    Cruicial P5 Nvme 1tb | OpenCore选择画面到登入画面约13秒。 |
 | 音效卡 | 内建Realtek ALC235 | 官方规格列为ALC233但苹果和微软都判定为ALC235编码。 | 
 | Wifi/Bluetooth | BCM94352Z/DW1560 | Sidecar及airdrop都可用。 |
 | Operating system | Win 10, Big Sur | 同一固态硬碟上双开苹果和微软系统。 |
@@ -57,4 +57,4 @@
 
 # Debugging journey
 1. 有问题先重设NVRAM
-2. 利用opencore的除错版本取得资讯，参阅[Dortania's OpenCore Install Guide-debugging](https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html)
+2. 利用OpenCore的除错版本取得资讯，参阅[Dortania's OpenCore Install Guide-debugging](https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html)
