@@ -2,20 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>#WARNING - 2</key>
-	<string>Ensure you understand EVERY field before booting.</string>
 	<key>#WARNING - 1</key>
 	<string>This is just a sample. Do NOT try loading it.</string>
+	<key>#WARNING - 2</key>
+	<string>Ensure you understand EVERY field before booting.</string>
 	<key>#WARNING - 3</key>
 	<string>In most cases recommended to use Sample.plist</string>
 	<key>#WARNING - 4</key>
 	<string>Use SampleCustom.plist only for special cases.</string>
 	<key>#WARNING - 5</key>
-	<string>This is a sample config for deskmini H470</string>
+	<string>This sample efi is intended for Deskmini H470</string>
 	<key>#WARNING - 6</key>
-	<string>此為Deskmini H470之範例引導文件</string>
+	<string>此為deskmini H470 之引導文件範例</string>
 	<key>#WARNING - 7</key>
-	<string>此为Deskmini H470之范例引导文件</string>
+	<string>此为deskmini H470 之引导文件范例</string>
 	<key>ACPI</key>
 	<dict>
 		<key>Add</key>
@@ -263,7 +263,7 @@
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
 				<key>layout-id</key>
-				<data>EQAAAA==</data>
+				<integer>18</integer>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -275,7 +275,7 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>BrcmBluetoothInjector.kext</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>PlistPath</key>
@@ -293,7 +293,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>BrcmFirmwareData.kext</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>PlistPath</key>
@@ -311,7 +311,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>BrcmPatchRAM3.kext</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>PlistPath</key>
@@ -329,7 +329,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>CPUFriendDataProvider.kext</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>PlistPath</key>
@@ -347,7 +347,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>IntelMausi.kext</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>PlistPath</key>
@@ -365,7 +365,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Lilu.kext</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>PlistPath</key>
@@ -383,7 +383,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>NVMeFix.kext</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>PlistPath</key>
@@ -401,7 +401,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>USBPorts.kext</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>PlistPath</key>
@@ -419,7 +419,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>VirtualSMC.kext</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>PlistPath</key>
@@ -437,7 +437,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>WhateverGreen.kext</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>PlistPath</key>
@@ -455,7 +455,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>AirPortBrcmNIC_Injector.kext</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>PlistPath</key>
@@ -473,7 +473,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>AirportBrcmFixup.kext</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>PlistPath</key>
@@ -491,7 +491,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>AppleALC.kext</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>PlistPath</key>
@@ -509,7 +509,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>FeatureUnlock.kext</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>PlistPath</key>
@@ -527,7 +527,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>SMCSuperIO.kext</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>PlistPath</key>
@@ -878,7 +878,7 @@
 			<key>HideAuxiliary</key>
 			<false/>
 			<key>LauncherOption</key>
-			<string>Disabled</string>
+			<string>Full</string>
 			<key>LauncherPath</key>
 			<string>Default</string>
 			<key>PickerAttributes</key>
@@ -890,7 +890,7 @@
 			<key>PickerVariant</key>
 			<string>Acidanthera\GoldenGate</string>
 			<key>PollAppleHotKeys</key>
-			<false/>
+			<true/>
 			<key>ShowPicker</key>
 			<true/>
 			<key>TakeoffDelay</key>
@@ -949,7 +949,7 @@
 			<key>ApECID</key>
 			<integer>0</integer>
 			<key>AuthRestart</key>
-			<false/>
+			<true/>
 			<key>BlacklistAppleUpdate</key>
 			<true/>
 			<key>DmgLoading</key>
@@ -1016,7 +1016,7 @@
 				<key>SystemAudioVolume</key>
 				<data>KA==</data>
 				<key>boot-args</key>
-				<string>igfxonln=1</string>
+				<string>igfxonln=1 </string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1179,6 +1179,8 @@
 		<key>Drivers</key>
 		<array>
 			<dict>
+				<key>Comment</key>
+				<string>AudioDxe.efi</string>
 				<key>Path</key>
 				<string>AudioDxe.efi</string>
 				<key>Enabled</key>
@@ -1187,6 +1189,8 @@
 				<string></string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>HfsPlus.efi</string>
 				<key>Path</key>
 				<string>HfsPlus.efi</string>
 				<key>Enabled</key>
@@ -1195,6 +1199,8 @@
 				<string></string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>OpenCanopy.efi</string>
 				<key>Path</key>
 				<string>OpenCanopy.efi</string>
 				<key>Enabled</key>
@@ -1203,6 +1209,8 @@
 				<string></string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>OpenRuntime.efi</string>
 				<key>Path</key>
 				<string>OpenRuntime.efi</string>
 				<key>Enabled</key>
@@ -1348,6 +1356,8 @@
 			<key>TscSyncTimeout</key>
 			<integer>0</integer>
 			<key>UnblockFsConnect</key>
+			<false/>
+			<key>ForceOcWriteFlash</key>
 			<false/>
 		</dict>
 	</dict>
