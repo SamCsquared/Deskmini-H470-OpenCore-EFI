@@ -1,5 +1,5 @@
 # Deskmini-H470-OpenCore-EFI
-此為deskmini h470專用之OpenCore 7.3導引文件範例。  
+此為deskmini h470專用之OpenCore 7.4導引文件範例。  
 黑蘋果之完成度與硬體有關，任何硬體上個改變皆可能需要重新設定config.plist文件。  
 [English](README.md)    
 [简体中文](README_zh-CN.md)
