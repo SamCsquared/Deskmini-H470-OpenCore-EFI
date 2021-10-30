@@ -21,7 +21,7 @@
 2. HDMI及DP的音效皆可。
 3. 睡眠/喚醒可。
 4. 依[Dortania's OpenCore OpenCore Post-Install-Fixing Power Management](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html)啟用能源節省項目。  
-5. Opencore和系統更新測試可(從Big Sur 11.5.2-> 11.6, OpenCore 7.2-> 7.3)。
+5. Opencore和系統更新測試可(從Big Sur 11.5.2-> 11.6-> 11.6.1, OpenCore 7.2-> 7.3 -> 7.4)。
 6. Airdrop和sidecar可用。
 7. Facetime和imessages等需要更改SerialNumber, UUID, MLB, ROM且最好有一個用過一陣子的Apple ID(比較不起疑，有正版蘋果裝置登錄過最好)，參閱[Dortania's OpenCore Post-Install-iservices](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html)。
 
