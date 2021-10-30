@@ -21,7 +21,7 @@ Hackintosh is highly hardware dependent so you might need to change your config.
 2. Sound through HDMI or DP works.
 3. Sleep/wake works.
 4. Powermanagement options restored via [Dortania's OpenCore OpenCore Post-Install-Fixing Power Management](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html).
-5. Update tested(Fine from Big Sur 11.5.2-> 11.6, OpenCore 7.2-> 7.3 ok).
+5. Update tested(Fine from Big Sur 11.5.2-> 11.6 ->11.6.1, OpenCore 7.2-> 7.3 -> 7.4).
 6. Airdrop and sidecar works.
 7. Iservices such as facetime and imessages works as long as you generate your own SerialNumber, UUID, MLB, ROM and had a valid Apple ID in good standing(Prefered logged into a valid Apple's device before). Follows [Dortania's OpenCore Post-Install-iservices](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html).
 
