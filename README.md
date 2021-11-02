@@ -1,5 +1,5 @@
 # Deskmini-H470-OpenCore-EFI
-This is an efi boot sample file for deskmini h470 on OpenCore 7.4.  
+This is an efi boot sample file for deskmini h470 on OpenCore 0.7.5.  
 Hackintosh is highly hardware dependent so you might need to change your config.plist.  
 [繁體中文](README_ZH-TW.md)  
 [简体中文](README_zh-CN.md)
@@ -32,7 +32,8 @@ To my understanding, kexts are like plugins to pass on hardware information so m
 |----------|-------------|
 | [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup) | Fix wifi for Broadcom wifi/BT cards. | 
 | [AppleALC](https://github.com/acidanthera/AppleALC) | Apple sound codecs. |   
-| [BrcmBluetoothInjector](https://github.com/acidanthera/BrcmPatchRAM) | Fix Bluetooth for Broadcom wifi/BT cards. | 
+| ~[BrcmBluetoothInjector](https://github.com/acidanthera/BrcmPatchRAM) | Fix Bluetooth for Broadcom wifi/BT cards. Dropped support on macOS 12.0 Monterey|~ 
+
 | [BrcmFirmwareData](https://github.com/acidanthera/BrcmPatchRAM) | Fix Bluetooth for Broadcom wifi/BT cards. |
 | [BrcmPatchRAM3](https://github.com/acidanthera/BrcmPatchRAM) |  Fix Bluetooth for Broadcom wifi/BT cards. | 
 | [CPUFriendDataProvider](https://github.com/stevezhengshiqi/one-key-cpufriend) | Power/Energy saving management options. |
