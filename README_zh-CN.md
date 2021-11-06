@@ -1,6 +1,7 @@
 # Deskmini-H470-Opencore-EFI
 此为deskmini h470专用之OpenCore 7.4导引文件范例。  
 黑苹果之完成度与硬件有关，任何硬件上个改变皆可能需要重新设定config.plist文件。  
+Big Sur 停更，OC 0.7.4稳定，之后更新以Monterey为主。  
 [English](README.md)        
 [繁體中文](README_ZH-TW.md)
 
@@ -13,16 +14,16 @@
 | 记忆体 |  Crucial DDR4 3200 8GB SODIMM x2 | 效能过剩，i3-10100在此主机板只能跑到2666MHz频率。 |
 | 硬碟 |    Cruicial P5 Nvme 1tb | OpenCore选择画面到登入画面约13秒。 |
 | 音效卡 | 内建Realtek ALC235 | 官方规格列为ALC233但苹果和微软都判定为ALC235编码。 | 
-| Wifi/Bluetooth | BCM94352Z/DW1560 | Sidecar及airdrop都可用。 |
-| Operating system | Win 10, Big Sur | 同一固态硬碟上双开苹果和微软系统。 |
+| Wifi/Bluetooth | BCM94352Z/DW1560 | Airdrop及~~随行~~都可用。 |
+| Operating system | Win 10, Monterey | 同一固态硬碟上双开苹果和微软系统。 |
 
 # Hackintosh
 1. HDMI和DP揭开机有画面type c输出没有测。
 2. HDMI及DP的音效皆可。
 3. 睡眠/唤醒可。
 4. 依[Dortania's OpenCore OpenCore Post-Install-Fixing Power Management](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html)启用能源节省项目。  
-5. Opencore和系统更新测试可(从Big Sur 11.5.2-> 11.6-> 11.6.1, Opencore 7.2-> 7.3-> 7.4)。
-6. Airdrop和sidecar可用。
+5. ~~Opencore和系统更新测试可(从Big Sur 11.5.2-> 11.6-> 11.6.1, Opencore 7.2-> 7.3-> 7.4)。~~
+6. Airdrop和~~随行~~可用。
 7. Facetime和imessages等需要更改SerialNumber, UUID, MLB, ROM且最好有一个用过一阵子的Apple ID(比较不起疑，有正版苹果装置登录过最好)，参阅[Dortania's OpenCore Post-Install-iservices](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html)。
 
 # Kexts
@@ -32,7 +33,8 @@
 |----------|-------------|
 | [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup) | 让Broadcom的wifi/BT网卡能辨识，才能有Wifi。 | 
 | [AppleALC](https://github.com/acidanthera/AppleALC) | 辨识音讯硬体而有声音。 |   
-| [BrcmBluetoothInjector](https://github.com/acidanthera/BrcmPatchRAM)| 辨识Broadcom的蓝芽功能，三件套1/3一组。 | 
+| ~~[BrcmBluetoothInjector](https://github.com/acidanthera/BrcmPatchRAM)~~| ~~辨识Broadcom的蓝芽功能，三件套1/3一组。macOS 12不支持~~ | 
+| [BlueToolFixup](https://github.com/acidanthera/BrcmPatchRAM) | macOS 12专用，部分功能缺失，辨识Broadcom的蓝芽功能，三件套1/3一组。 |
 | [BrcmFirmwareData](https://github.com/acidanthera/BrcmPatchRAM) | 辨识Broadcom的蓝芽功能，三件套2/3一组。 |
 | [BrcmPatchRAM3](https://github.com/acidanthera/BrcmPatchRAM) |  辨识Broadcom的蓝芽功能，三件套3/3一组。 | 
 | [CPUFriendDataProvider](https://github.com/stevezhengshiqi/one-key-cpufriend) | 启用电脑的节能选项。 |
@@ -54,6 +56,7 @@
 1. 客製自己的SSDTs。
 2. 持续关注显示问题和声音问题的解决方法。
 3. 双启动macOS Monterey和Win11且研究bios启用secure boot的方法。
+4. 无线随行功能损坏，有线随行可以。
 
 # Debugging journey
 1. 有问题先重设NVRAM
