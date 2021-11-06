@@ -1,5 +1,5 @@
 # Deskmini-H470-OpenCore-EFI
-此為deskmini h470專用之OpenCore 7.4導引文件範例。  
+此為deskmini h470專用之OpenCore 0.7.5導引文件範例。  
 黑蘋果之完成度與硬體有關，任何硬體上個改變皆可能需要重新設定config.plist文件。  
 Big Sur 停更，OC 0.7.4穩定，之後更新以Monterey為主。  
 [English](README.md)    
@@ -33,8 +33,8 @@ Big Sur 停更，OC 0.7.4穩定，之後更新以Monterey為主。
 |----------|-------------|
 | [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup) | 讓Broadcom的wifi/BT網卡能辨識，才能有Wifi。 | 
 | [AppleALC](https://github.com/acidanthera/AppleALC) | 辨識音訊硬體而有聲音。 |   
-| ~~[BrcmBluetoothInjector](https://github.com/acidanthera/BrcmPatchRAM)~~| ~~辨識Broadcom的藍芽功能，三件套1/3一組。~~ |
-| [BlueToolFixup](https://github.com/acidanthera/BrcmPatchRAM) | macOS12暫用，藍芽修復不完整，辨識Broadcom的藍芽功能，三件套1/3一組。 |
+| ~~[BrcmBluetoothInjector](https://github.com/acidanthera/BrcmPatchRAM)~~| ~~macOS12無法用，辨識Broadcom的藍芽功能，三件套1/3一組。~~ |
+| [BlueToolFixup](https://github.com/acidanthera/BrcmPatchRAM) | macOS12暫用，藍芽更能支援不完整，辨識Broadcom的藍芽功能，三件套1/3一組。 |
 | [BrcmFirmwareData](https://github.com/acidanthera/BrcmPatchRAM) | 辨識Broadcom的藍芽功能，三件套2/3一組。 |
 | [BrcmPatchRAM3](https://github.com/acidanthera/BrcmPatchRAM) |  辨識Broadcom的藍芽功能，三件套3/3一組。 | 
 | [CPUFriendDataProvider](https://github.com/stevezhengshiqi/one-key-cpufriend) | 啟用電腦的節能選項。 |
@@ -56,7 +56,7 @@ Big Sur 停更，OC 0.7.4穩定，之後更新以Monterey為主。
 1. 客製自己的SSDTs。
 2. 持續關注顯示問題和聲音問題的解決方法。
 3. 雙啟動macOS Monterey和Win11且研究bios啟用secure boot的方法。
-4. 並行因為藍芽功能不全無法無線使用，透過有線連接還是可以。
+4. 並行因為藍芽功能不全無法無線使用，透過有線連接還是可行。
 
 # Debugging journey
 1. 有問題先重設NVRAM
