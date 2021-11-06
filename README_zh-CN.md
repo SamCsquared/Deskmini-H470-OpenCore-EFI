@@ -1,5 +1,5 @@
 # Deskmini-H470-Opencore-EFI
-此为deskmini h470专用之OpenCore 7.4导引文件范例。  
+此为deskmini h470专用之OpenCore 0.7.5导引文件范例。  
 黑苹果之完成度与硬件有关，任何硬件上个改变皆可能需要重新设定config.plist文件。  
 Big Sur 停更，OC 0.7.4稳定，之后更新以Monterey为主。  
 [English](README.md)        
