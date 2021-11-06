@@ -1,6 +1,7 @@
 # Deskmini-H470-OpenCore-EFI
 此為deskmini h470專用之OpenCore 7.4導引文件範例。  
 黑蘋果之完成度與硬體有關，任何硬體上個改變皆可能需要重新設定config.plist文件。  
+Big Sur 停更，OC 0.7.4穩定，之後更新以Monterey為主。  
 [English](README.md)    
 [简体中文](README_zh-CN.md)
 
@@ -13,7 +14,7 @@
 | 記憶體 |  Crucial DDR4 3200 8GB SODIMM x2 | 效能過剩，i3-10100在此主機板只能跑到2666MHz頻率。 |
 | 硬碟 |    Cruicial P5 Nvme 1tb | OpenCore選擇畫面到登入畫面約13秒。 |
 | 音效卡 | 內建Realtek ALC235 | 官方規格列為ALC233但蘋果和微軟都判定為ALC235碼。 | 
-| Wifi/Bluetooth | BCM94352Z/DW1560 | Sidecar及airdrop都可用。 |
+| Wifi/Bluetooth | BCM94352Z/DW1560 | Aidrop及~~並行~~都可用。 |
 | Operating system | Win 10, Big Sur | 同一固態硬碟上雙開蘋果和微軟系統。 |
 
 # Hackintosh
@@ -21,8 +22,8 @@
 2. HDMI及DP的音效皆可。
 3. 睡眠/喚醒可。
 4. 依[Dortania's OpenCore OpenCore Post-Install-Fixing Power Management](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html)啟用能源節省項目。  
-5. Opencore和系統更新測試可(從Big Sur 11.5.2-> 11.6-> 11.6.1, OpenCore 7.2-> 7.3 -> 7.4)。
-6. Airdrop和sidecar可用。
+5. ~~Opencore和系統更新測試可(從Big Sur 11.5.2-> 11.6-> 11.6.1, OpenCore 7.2-> 7.3 -> 7.4)。~~
+6. Airdrop和~~sidecar~~可用。
 7. Facetime和imessages等需要更改SerialNumber, UUID, MLB, ROM且最好有一個用過一陣子的Apple ID(比較不起疑，有正版蘋果裝置登錄過最好)，參閱[Dortania's OpenCore Post-Install-iservices](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html)。
 
 # Kexts
@@ -32,7 +33,8 @@
 |----------|-------------|
 | [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup) | 讓Broadcom的wifi/BT網卡能辨識，才能有Wifi。 | 
 | [AppleALC](https://github.com/acidanthera/AppleALC) | 辨識音訊硬體而有聲音。 |   
-| [BrcmBluetoothInjector](https://github.com/acidanthera/BrcmPatchRAM)| 辨識Broadcom的藍芽功能，三件套1/3一組。 | 
+| ~~[BrcmBluetoothInjector](https://github.com/acidanthera/BrcmPatchRAM)~~| ~~辨識Broadcom的藍芽功能，三件套1/3一組。~~ |
+| [BlueToolFixup](https://github.com/acidanthera/BrcmPatchRAM) | macOS12暫用，藍芽修復不完整，辨識Broadcom的藍芽功能，三件套1/3一組。 |
 | [BrcmFirmwareData](https://github.com/acidanthera/BrcmPatchRAM) | 辨識Broadcom的藍芽功能，三件套2/3一組。 |
 | [BrcmPatchRAM3](https://github.com/acidanthera/BrcmPatchRAM) |  辨識Broadcom的藍芽功能，三件套3/3一組。 | 
 | [CPUFriendDataProvider](https://github.com/stevezhengshiqi/one-key-cpufriend) | 啟用電腦的節能選項。 |
@@ -54,6 +56,7 @@
 1. 客製自己的SSDTs。
 2. 持續關注顯示問題和聲音問題的解決方法。
 3. 雙啟動macOS Monterey和Win11且研究bios啟用secure boot的方法。
+4. 並行因為藍芽功能不全無法無線使用，透過有線連接還是可以。
 
 # Debugging journey
 1. 有問題先重設NVRAM
