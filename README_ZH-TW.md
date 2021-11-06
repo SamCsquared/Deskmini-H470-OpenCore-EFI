@@ -15,7 +15,7 @@ Big Sur 停更，OC 0.7.4穩定，之後更新以Monterey為主。
 | 硬碟 |    Cruicial P5 Nvme 1tb | OpenCore選擇畫面到登入畫面約13秒。 |
 | 音效卡 | 內建Realtek ALC235 | 官方規格列為ALC233但蘋果和微軟都判定為ALC235碼。 | 
 | Wifi/Bluetooth | BCM94352Z/DW1560 | Aidrop及~~並行~~都可用。 |
-| Operating system | Win 10, Big Sur | 同一固態硬碟上雙開蘋果和微軟系統。 |
+| Operating system | Win 10, Monterey | 同一固態硬碟上雙開蘋果和微軟系統。 |
 
 # Hackintosh
 1. HDMI和DP揭開機有畫面type c輸出沒有測。
