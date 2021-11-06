@@ -1,6 +1,6 @@
 # Deskmini-H470-OpenCore-EFI
 This is an efi boot sample file for deskmini h470 on OpenCore 0.7.5.  
-Hackintosh is highly hardware dependent so you might need to change your config.plist.
+Hackintosh is highly hardware dependent so you might need to change your config.plist.  
 Big Sur now archived with OC 0.7.4 stable, focus on Monterey from now on  
 [繁體中文](README_ZH-TW.md)  
 [简体中文](README_zh-CN.md)
