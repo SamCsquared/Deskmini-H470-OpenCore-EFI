@@ -51,7 +51,7 @@ To my understanding, kexts are like plugins to pass on hardware information so m
 1. When booting with dual screen on, horizontal stripes/artifacts appears on screen which can be solved by repluging the moniter or turn on screen after login
 2. Popping/ hissing sound for speakers/headphone when booting, shutting down or sleeping, no issues when using macOS. Same issue is present in deskmini H310 and [viorel78] (https://github.com/viorel78/ASRock-DeskMini-310/issues/1) suggests that adding rear audio cable could resolve this issue.
 3. DRM contents such as Netflix is not playable on Safari, use Firefox, Chrome or Edge instead. (As of Big Sur, DRM are baked in Apple's hardware)
-4. Sidecar broken due to incomplete Bluetooth fix
+4. Wireless sidecar broken due to incomplete Bluetooth fix, wired connection is fine.
 
 # To be done in the future
 1. Bulid my own custom SSDTs.
